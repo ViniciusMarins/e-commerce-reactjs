@@ -23,7 +23,7 @@ yarn dev
 
 #### Realizar a busca de um produto
 
-```http
+```bash
   GET https://api.mercadolibre.com/sites/MLB/search?q=${query}
 ```
 
