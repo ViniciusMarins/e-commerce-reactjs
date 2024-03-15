@@ -1,0 +1,45 @@
+footer {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  background-color: #fff159;
+}
+
+.list-icons {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 25px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+footer span {
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}

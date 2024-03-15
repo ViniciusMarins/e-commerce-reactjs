@@ -1,0 +1,17 @@
+.title-products {
+  margin-top: 50px;
+  letter-spacing: 5px;
+}
+
+.container-products {
+  padding: 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+}

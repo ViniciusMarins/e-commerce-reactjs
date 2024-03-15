@@ -1,0 +1,91 @@
+.container_card {
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+}
+
+.card_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_infos {
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: 20px;
+  align-self: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.card_original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.card_price {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.5;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card_price span {
+  color: forestgreen;
+  font-size: 15px;
+  margin-top: -4px;
+  margin-left: 8px;
+}
+
+.card_shipping {
+  color: forestgreen;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card_add-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  margin: 12px 15px;
+  color: #0c5dd6;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(222, 222, 222, 0.85);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.container_card:hover {
+  transition: all 0.3s ease-in;
+  transform: scale(1.05);
+}
+
+.container_card:hover .card_add-button {
+  display: flex;
+}
+
+.card_add-button:hover {
+  background-color: rgba(222, 222, 222, 0.7);
+}

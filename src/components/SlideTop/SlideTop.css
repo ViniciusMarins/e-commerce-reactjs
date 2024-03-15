@@ -1,0 +1,36 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.containerSlide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  animation: bounce 1.4s infinite;
+}
+
+.containerSlide::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+}
+
+.containerSlide svg:hover {
+  color: rgba(0, 0, 0, 0.7);
+}

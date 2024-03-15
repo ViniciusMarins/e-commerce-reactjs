@@ -1,0 +1,25 @@
+.header {
+  background-color: #fff159;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  z-index: 3;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .header > div {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}

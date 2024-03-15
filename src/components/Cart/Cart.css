@@ -1,0 +1,80 @@
+.cart {
+  background-color: rgb(235, 235, 235);
+  padding: 100px 20px 20px;
+  max-width: 305px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(110%, 0);
+  transition: all 400ms ease;
+  border-left: 2px solid rgb(221, 221, 221);
+  z-index: 2;
+}
+
+.cart-items {
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.cart-items::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+  background: #cdcdcd;
+}
+
+.cart-items::-webkit-scrollbar-thumb:hover {
+  background: #bcbcbc;
+}
+
+.cart-resume {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 0 15px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-resume > button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff159;
+  cursor: pointer;
+}
+
+.cart-resume > button:hover {
+  background-color: #eee04e;
+}
+
+.cart-resume > button:active {
+  transform: scale(0.98);
+}
+
+.cart-active {
+  transform: translate(0, 0);
+}
+
+@media only screen and (max-width: 740px) {
+  .cart {
+    padding: 170px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .cart {
+    padding: 220px 20px 20px;
+  }
+}
